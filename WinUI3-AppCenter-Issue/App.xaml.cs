@@ -1,4 +1,7 @@
-﻿using Microsoft.UI.Xaml;
+﻿using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Data;
@@ -32,6 +35,10 @@ namespace WinUI3_AppCenter_Issue
         /// </summary>
         public App()
         {
+            AppCenter.LogLevel = LogLevel.Verbose;
+            AppCenter.Start("33af5b86-e781-4256-9713-616da90ae950",
+                  typeof(Analytics), typeof(Crashes));
+
             this.InitializeComponent();
         }
 
