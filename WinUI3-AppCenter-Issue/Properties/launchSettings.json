@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WinUI3-AppCenter-Issue (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WinUI3-AppCenter-Issue (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
